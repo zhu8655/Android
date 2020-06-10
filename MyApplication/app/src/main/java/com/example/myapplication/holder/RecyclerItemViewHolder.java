@@ -65,12 +65,10 @@ public class RecyclerItemViewHolder extends RecyclerItemBaseHolder {
                 String url = info.feedurl;
                 //listVideoUtil.setCachePath(new File(FileUtils.getPath()));
 
-                gsySmallVideoHelperBuilder.setVideoTitle("title " + position).setUrl(url);
+                gsySmallVideoHelperBuilder.setVideoTitle(info.description).setUrl(url);
 
                 smallVideoHelper.startPlay();
-
-                //必须在startPlay之后设置才能生效
-                //listVideoUtil.getGsyVideoPlayer().getTitleTextView().setVisibility(View.VISIBLE);
+                smallVideoHelper.getGsyVideoPlayer().getTitleTextView().setVisibility(View.VISIBLE);
             }
         });
     }

@@ -167,7 +167,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPrepared(String url, Object... objects) {
                 super.onPrepared(url, objects);
-                Debuger.printfLog("Duration " + smallVideoHelper.getGsyVideoPlayer().getDuration() + " CurrentPosition " + smallVideoHelper.getGsyVideoPlayer().getCurrentPositionWhenPlaying());
+                Debuger.printfLog("Duration " + smallVideoHelper.getGsyVideoPlayer().getDuration() +
+                        " CurrentPosition " + smallVideoHelper.getGsyVideoPlayer().getCurrentPositionWhenPlaying());
             }
 
             @Override
